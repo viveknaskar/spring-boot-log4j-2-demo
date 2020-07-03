@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration>
+    <Properties>
+        <Property name="BASE_DIR">/opt/projects/spring-log4j-application/logs</Property>
+        <Property name="FILE_BASE_NAME">spring-log4j-application</Property>
+        <Property name="LOG_PATTERN">[%-5level] [%d{ISO8601}] | [%t] [%logger{0}] --- %m%n%ex</Property>
+        <Property name="ROLLING_FILE_NAME">${BASE_DIR}/${FILE_BASE_NAME}.log</Property>
+        <Property name="ROLLING_FILE_PATTERN">${BASE_DIR}/$${date:yyyy-MM}/${FILE_BASE_NAME}-%d{MM-dd-yyyy}-%i.log.zip</Property>
+    </Properties>
+    <Appenders>
+        <Console name="ConsoleAppender" target="SYSTEM_OUT">
+            <PatternLayout pattern="${LOG_PATTERN}"/>
+        </Console>
+
+        <!-- Rolling File Appender -->
+        <RollingFile name="FileAppender" fileName="${ROLLING_FILE_NAME}"
+                     filePattern="${ROLLING_FILE_PATTERN}">
+            <PatternLayout>
+                <Pattern>${LOG_PATTERN}</Pattern>
+            </PatternLayout>
+            <Policies>
+                <SizeBasedTriggeringPolicy size="10MB" />
+            </Policies>
+            <DefaultRolloverStrategy max="10"/>
+        </RollingFile>
+    </Appenders>
+
+    <Loggers>
+        <Logger name="spring-log4j-application" level="info" additivity="false">
+            <AppenderRef level="trace" ref="ConsoleAppender" />
+        </Logger>
+
+        <Root level="info">
+            <AppenderRef level="trace" ref="ConsoleAppender" />
+        </Root>
+    </Loggers>
+
+</Configuration>

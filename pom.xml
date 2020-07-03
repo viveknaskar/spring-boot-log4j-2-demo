@@ -8,6 +8,7 @@
 		<version>2.4.0-SNAPSHOT</version>
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
+
 	<groupId>com.viveknaskar</groupId>
 	<artifactId>springloggingwithlog4j</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
