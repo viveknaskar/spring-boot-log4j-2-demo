@@ -1,0 +1,11 @@
+[INFO ] [2020-07-05T00:44:55,087] | [main] [SpringLog4JApplicationTests] --- Starting SpringLog4JApplicationTests using Java 11.0.4 on DESKTOP-CEMHJ41 with PID 8392 (started by Hp in F:\JavaWorkspace\springloggingwithlog4j)
+[INFO ] [2020-07-05T00:44:55,094] | [main] [SpringLog4JApplicationTests] --- No active profile set, falling back to default profiles: default
+[INFO ] [2020-07-05T00:44:55,928] | [main] [SpringLog4JApplicationTests] --- Started SpringLog4JApplicationTests in 1.426 seconds (JVM running for 3.659)
+[INFO ] [2020-07-05T00:45:31,846] | [main] [SpringLog4jApplication] --- Starting SpringLog4jApplication using Java 11.0.4 on DESKTOP-CEMHJ41 with PID 1324 (F:\JavaWorkspace\springloggingwithlog4j\target\classes started by Hp in F:\JavaWorkspace\springloggingwithlog4j)
+[INFO ] [2020-07-05T00:45:31,854] | [main] [SpringLog4jApplication] --- No active profile set, falling back to default profiles: default
+[INFO ] [2020-07-05T00:45:32,926] | [main] [SpringLog4jApplication] --- Started SpringLog4jApplication in 2.256 seconds (JVM running for 4.071)
+[INFO ] [2020-07-05T00:45:32,931] | [main] [SpringLog4jApplication] --- RESTFul Application Started
+[INFO ] [2020-07-05T00:45:44,556] | [main] [SpringLog4jApplication] --- Starting SpringLog4jApplication using Java 11.0.4 on DESKTOP-CEMHJ41 with PID 6680 (F:\JavaWorkspace\springloggingwithlog4j\target\classes started by Hp in F:\JavaWorkspace\springloggingwithlog4j)
+[INFO ] [2020-07-05T00:45:44,562] | [main] [SpringLog4jApplication] --- No active profile set, falling back to default profiles: default
+[INFO ] [2020-07-05T00:45:45,523] | [main] [SpringLog4jApplication] --- Started SpringLog4jApplication in 1.725 seconds (JVM running for 3.341)
+[INFO ] [2020-07-05T00:45:45,528] | [main] [SpringLog4jApplication] --- RESTFul Application Started
