@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Configuration>
     <Properties>
-        <Property name="BASE_DIR">/opt/projects/spring-log4j-application/logs</Property>
+        <Property name="BASE_DIR">opt/projects/spring-log4j-application/logs</Property>
         <Property name="FILE_BASE_NAME">spring-log4j-application</Property>
         <Property name="LOG_PATTERN">[%-5level] [%d{ISO8601}] | [%t] [%logger{0}] --- %m%n%ex</Property>
         <Property name="ROLLING_FILE_NAME">${BASE_DIR}/${FILE_BASE_NAME}.log</Property>
@@ -13,7 +13,7 @@
         </Console>
 
         <!-- Rolling File Appender -->
-        <RollingFile name="FileAppender" fileName="${ROLLING_FILE_NAME}"
+        <RollingFile name="RollingFileAppender" fileName="${ROLLING_FILE_NAME}"
                      filePattern="${ROLLING_FILE_PATTERN}">
             <PatternLayout>
                 <Pattern>${LOG_PATTERN}</Pattern>
@@ -26,8 +26,8 @@
     </Appenders>
 
     <Loggers>
-        <Logger name="spring-log4j-application" level="info" additivity="false">
-            <AppenderRef level="trace" ref="ConsoleAppender" />
+        <Logger name="com.viveknaskar.springloggingwithlog4j" level="info" additivity="false">
+            <AppenderRef level="trace" ref="RollingFileAppender" />
         </Logger>
 
         <Root level="info">
